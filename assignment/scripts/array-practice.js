@@ -91,7 +91,9 @@ let colors = ['orange', 'yellow', 'green', 'teal'];
 // 4.c. TODO: Create a variable `lastColor`. Remove the color 
 //      at the end of your array & assign it to `lastColor`.
 //      Console log both the color removed and the updated array.
-
+let lastColor = colors.pop();
+console.log('Removed the last color', lastColor);
+console.log('The colors are now', colors);
 
 // Example: Remove the first color using Array.shift
 removedAnimal = animalArray.shift();
@@ -101,7 +103,9 @@ console.log('The animals are now', animalArray);
 // 4.d. TODO: Create a variable `firstColor`. Remove the color 
 //      at the beginning of your array & assign it to `firstColor`.
 //      Console log both the color removed and the updated array.
-
+let firstColor = colors.shift();
+console.log('Removed the first color', firstColor);
+console.log('The colors are now', colors);
 
 // STRETCH GOALS:
 
@@ -109,17 +113,23 @@ let gems = ['Topaz', 'Citrine', 'Diamond', 'Emerald', 'Iolite', 'Tanzanite'];
 
 // 5.a (STRETCH) TODO: Replace the second gem with 'Tourmaline'
 //      Console log the updated array.
+let replacedGem = gems.splice(gems.indexOf('Citrine'), 1, 'Tourmaline');
+console.log(gems);
 
 
 // 5.b (STRETCH) TODO: Sort your gems array
 //     in reverse alphabetical order.
 //     Console log the array.
-
+gems.sort();
+gems.reverse();
+console.log(gems);
 
 // 5.c (STRETCH) TODO: Create a variable `gemString` and
 //     put the word "and" between each item. Research `.join()`.
 //     eg "Tourmaline and Topaz and Tanzanite and Iolite and Emerald and Diamond".
 //     Console log the string.
+let gemString = (gems.join(' and '));
+console.log(gemString);
 
 
 // 5.d (STRETCH) TODO: Make a new array `colorfulGems` that combines 
@@ -128,7 +138,8 @@ let gems = ['Topaz', 'Citrine', 'Diamond', 'Emerald', 'Iolite', 'Tanzanite'];
 //     It should look something like:
 //     ['Tourmaline', 'Topaz', 'Tanzanite', 'Iolite', 'Emerald', 'Diamond', 'yellow', 'green']
 
-
+let colorfulGems = gems.concat(colors);
+console.log(colorfulGems);
 
 
 
