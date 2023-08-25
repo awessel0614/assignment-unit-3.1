@@ -20,12 +20,12 @@ console.log('--- 2. Length of an array ---');
 
 
 // Example: How many animals are in the array?
-let numberOfAnimals = animalArray.length
+let numberOfAnimals = animalArray.length;
 console.log('Number of animals:', numberOfAnimals);
 
 // 2. TODO: Create a variable `numberOfFoods`
 //    Console log to the console the number of foods
-let numberOfFoods = favoriteFoods.length
+let numberOfFoods = favoriteFoods.length;
 console.log('Number of favorite foods: ', numberOfFoods);
 
 
@@ -34,7 +34,7 @@ console.log('--- 3. Accessing items in an array ---');
 
 // Example: Log the first animal from the array using it's array index
 let firstAnimal = animalArray[0];
-console.log('First animal is', firstAnimal);
+console.log('First animal is: ', firstAnimal);
 
 // 3.a. TODO: Create a variable `secondAnimal`
 //      Console log the second animal in the array 
@@ -61,6 +61,8 @@ let animalToPush = 'penguin';
 animalArray.push(animalToPush);
 console.log('Added an animal to end,', animalArray);
 
+
+console.log(animalArray);
 // 4.a. TODO: Create a variable `dessert` and assign it to a new food.
 //      Add the `dessert` at the end of your array & log the array
 let dessert = 'tres leches cake';
